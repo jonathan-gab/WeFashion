@@ -1,0 +1,129 @@
+.br{
+    border: 1px solid red;
+}
+
+
+/* ########## Welcome page ########### */
+
+.HeaderWelcome {
+    position: relative;
+    background-color: black;
+    height: 100vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .HeaderWelcome .container {
+    position: relative;
+    z-index: 2;
+    height: auto;
+  }
+
+  .HeaderWelcome>video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  .HeaderWelcome .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(103, 103, 103);
+    opacity: 0.5;
+    z-index: 1;
+  }
+
+
+  .Titlebox{
+    border-left: 4px solid white;
+  }
+
+  .NeonText{
+    text-shadow: 1px 1px 2px #727272, 0 0 1em #727272, 0 0 0.3em #727272;
+  }
+
+  .btn-enter{
+    border-radius: 50px;
+    background-color: transparent;
+    border: 3px solid white;
+    color: white;
+  }
+
+  .btn-enter:hover{
+    border-radius: 50px;
+    background-color: transparent;
+    border: 3px solid #66EB9A;
+    color:#66EB9A ;
+  }
+
+  /* ########## Index ########### */
+
+.Title{
+    color: #66EB9A;
+    text-shadow: 1px 1px 2px #00ffea, 0 0 1em #00ffea;
+    font-size:xx-large;
+
+
+}
+
+.Title:hover{
+    color: white;
+    text-shadow: 1px 1px 2px #66EB9A, 0 0 1em #66EB9A, 0 0 1em #66EB9A, 0 0 1em #66EB9A;
+    font-size:xX-large;
+}
+
+.MenuText{
+    color: #66EB9A;
+    text-shadow: 1px 1px 2px #00ffea, 0 0 1em #00ffea;
+    font-size:x-large;
+}
+
+.MenuText:hover{
+    color: white;
+    text-shadow: 1px 1px 2px #66EB9A, 0 0 1em #66EB9A, 0 0 1em #66EB9A, 0 0 1em #66EB9A;
+    font-size:x-large;
+}
+
+
+/* ########## Footer ########### */
+
+footer{
+    position: absolute;
+    bottom: 0;
+    background-color: black;
+}
+
+.FooterText{
+    color: #66EB9A;
+    text-shadow: 1px 1px 2px #00ffea, 0 0 1em #00ffea;
+    font-size:large;
+}
+
+.FooterTitle{
+    color: #66EB9A;
+    text-shadow: 1px 1px 2px #00ffea, 0 0 1em #00ffea;
+    font-size:xx-large;
+}
+
+
+
+
+.FooterText:hover{
+    color: white;
+    text-shadow: 1px 1px 2px #66EB9A, 0 0 1em #66EB9A, 0 0 1em #66EB9A, 0 0 1em #66EB9A;
+    font-size:large;
+}
+
