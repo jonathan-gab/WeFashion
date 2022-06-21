@@ -25,8 +25,8 @@
     <div class="container h-100">
     <div class="col-lg-12 d-flex h-100 text-center align-items-center">
         <div class="col-lg-2 w-100 text-white">
-        <h1 class="col-lg-4 m-auto Titlebox NeonText display-3 font-monospace">WE FASHION</h1>
-        <a href="{{url('/index.blade.php')}}"><button type="button" class="my-4 NeonText font-monospace btn-enter ">ENTRER</button></a>
+        <h1 class="col-lg-4 m-auto Titlebox NeonTextTitle display-3 font-monospace">WE FASHION</h1>
+        <a href="{{url('/index.blade.php')}}"><button type="button" class="my-4 NeonBouton font-monospace">ENTRER</button></a>
         </div>
     </div>
     </div>

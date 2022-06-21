@@ -1,7 +1,10 @@
 <?php
 
+use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\ProductPageController;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,3 +22,12 @@ Route::get('/', function () {
 });
 
 Route::get('index.blade.php', [ProductController::class, 'index'])->name('index');
+Route::get('productPage.blade.php', [ProductPageController::class, 'productPage'])->name('productPage');
+Route::get('adminAuthentication.blade.php', [Authentication::class, 'admin'])->name('admin');
+
+
+Auth::routes();
+
+Route::get('admin',[LoginController::class, 'showLoginForm'])->name('admin');
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

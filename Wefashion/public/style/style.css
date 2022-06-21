@@ -2,6 +2,9 @@
     border: 1px solid red;
 }
 
+.TextColor{
+   color:#66EB9A ;
+}
 
 /* ########## Welcome page ########### */
 
@@ -49,25 +52,12 @@
 
   .Titlebox{
     border-left: 4px solid white;
+
   }
 
-  .NeonText{
-    text-shadow: 1px 1px 2px #727272, 0 0 1em #727272, 0 0 0.3em #727272;
-  }
 
-  .btn-enter{
-    border-radius: 50px;
-    background-color: transparent;
-    border: 3px solid white;
-    color: white;
-  }
 
-  .btn-enter:hover{
-    border-radius: 50px;
-    background-color: transparent;
-    border: 3px solid #66EB9A;
-    color:#66EB9A ;
-  }
+
 
   /* ########## Index ########### */
 
@@ -75,14 +65,17 @@
     color: #66EB9A;
     text-shadow: 1px 1px 2px #00ffea, 0 0 1em #00ffea;
     font-size:xx-large;
-
-
+    border-left: 3px solid #66EB9A ;
 }
 
 .Title:hover{
     color: white;
     text-shadow: 1px 1px 2px #66EB9A, 0 0 1em #66EB9A, 0 0 1em #66EB9A, 0 0 1em #66EB9A;
     font-size:xX-large;
+}
+
+.Title:focus{
+    color: white;
 }
 
 .MenuText{
@@ -97,11 +90,140 @@
     font-size:x-large;
 }
 
+.MenuText:focus{
+    color: white;
+    text-shadow: 1px 1px 2px #00ffea, 0 0 1em #00ffea;
+
+}
+
+
+/* ########## Produtcs cards ########### */
+
+.TItleList{
+    color: #66EB9A;
+    text-shadow: 1px 1px 2px #00ffea, 0 0 1em #00ffea;
+    border-left: 3px solid #66EB9A ;
+}
+
+.NeonTextTitle{
+    color: #66EB9A;
+    text-shadow: 1px 1px 2px #00ffea, 0 0 1em #00ffea;
+    border-left: 3px solid #66EB9A ;
+}
+
+.NeonText{
+    color: #66EB9A;
+    text-shadow: 1px 1px 2px #00ffea, 0 0 1em #00ffea;
+}
+
+.NeonBouton{
+    color: #66EB9A;
+    text-shadow: 1px 1px 2px #00ffea, 0 0 1em #00ffea;
+    border: 3px solid #66EB9A;
+    border-radius: 50px;
+    background-color: transparent;
+}
+
+.NeonBouton:hover{
+    background-color: #66EB9A;
+    color: white;
+    text-shadow: 1px 1px 2px #00ffea, 0 0 1em #00ffea;
+
+
+}
+
+
+.container-fluid,
+.container {
+    max-width: 1200px;
+}
+
+.card-container {
+    padding: 100px 0px;
+    -webkit-perspective: 1000;
+    perspective: 1000;
+}
+
+
+
+.profile-card-2 {
+    
+    max-height: 400px;
+    max-width: 300px;
+    background-color: #FFF;
+    box-shadow: 0px 0px 15px #66EB9A;
+    background-position: center;
+    overflow: hidden;
+    position: relative;
+    margin: 10px auto;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.profile-card-2 img {
+    transition: all linear 0.25s;
+}
+
+.profile-card-2 .profile-name {
+    position: absolute;
+    left: 30px;
+    bottom: 70px;
+    font-size: 30px;
+    color: #FFF;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    transition: all linear 0.25s;
+}
+
+
+
+.profile-card-2 .profile-username {
+    position: absolute;
+    bottom: 50px;
+    left: 30px;
+    color: #FFF;
+    font-size: 13px;
+    transition: all linear 0.25s;
+}
+
+
+.profile-card-2:hover img {
+    filter: grayscale(100%);
+}
+
+.profile-card-2:hover .profile-name {
+    bottom: 80px;
+}
+
+.profile-card-2:hover .profile-username {
+    bottom: 60px;
+}
+
+.profile-card-2:hover .profile-icons {
+    right: 40px;
+}
+
+
+/* ########## Product page ########### */
+.btnacheter{
+    border-radius: 50px;
+    background-color: transparent;
+    border: 3px solid #66EB9A;
+  }
+
+  .btnacheter:hover{
+    border-radius: 50px;
+    background-color: #66EB9A;
+    border: 3px solid #66EB9A;
+    color: white;
+    text-shadow: 1px 1px 2px white, 0 0 1em white, 0 0 1em white;
+  }
+
 
 /* ########## Footer ########### */
 
 footer{
-    position: absolute;
+    
     bottom: 0;
     background-color: black;
 }
@@ -118,6 +240,11 @@ footer{
     font-size:xx-large;
 }
 
+.FooterText:focus{
+    color: #66EB9A;
+    text-shadow: 1px 1px 2px #00ffea, 0 0 1em #00ffea;
+}
+
 
 
 
@@ -126,4 +253,14 @@ footer{
     text-shadow: 1px 1px 2px #66EB9A, 0 0 1em #66EB9A, 0 0 1em #66EB9A, 0 0 1em #66EB9A;
     font-size:large;
 }
+
+
+
+/* ########## Admin part ########### */
+
+/* ########## Login ########### */
+
+/* .LoginForm{
+    background-color: #66EB9A;
+} */
 

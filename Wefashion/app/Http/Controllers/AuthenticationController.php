@@ -4,16 +4,11 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\User;
  
-class ProductController{
-    public function index()
+class AuthenticationController{
+    public function admin()
     {
         $data= user::latest()->first();
-        return view('index'); // next:- page name created with next.blade.php 
+        return view('admin'); // next:- page name created with next.blade.php 
     }
 }
-
-
-
-
-
 
