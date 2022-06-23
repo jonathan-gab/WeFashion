@@ -24,6 +24,8 @@ Route::get('/', function () {
 Route::get('index.blade.php', [ProductController::class, 'index'])->name('index');
 Route::get('productPage.blade.php', [ProductPageController::class, 'productPage'])->name('productPage');
 Route::get('adminAuthentication.blade.php', [Authentication::class, 'admin'])->name('admin');
+Route::get('modificationController.blade.php', [App\Http\Controllers\ModificationProductController::class, 'modificationController'])->name('modificationController');
+
 
 
 Auth::routes();
@@ -31,3 +33,5 @@ Auth::routes();
 Route::get('admin',[LoginController::class, 'showLoginForm'])->name('admin');
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+

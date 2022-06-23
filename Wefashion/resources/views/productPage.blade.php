@@ -16,12 +16,12 @@
     {{-- main --}}
 
     <main>
-        <div class="  col-lg-10 row m-auto">
-            <div class="  py-5 col-lg-6">
-                <img class="  w-100" src="../assets/img/femmes/Wxl-_19PE_juin18_3490.jpg" alt="">
+        <div class="my-5 col-lg-10 row m-auto">
+            <div class=" col-lg-6">
+                <img class="w-100" src="../assets/img/femmes/Wxl-_19PE_juin18_3490.jpg" alt="">
             </div>
     
-            <div class="    my-5 py-5 col-lg-6">
+            <div class="my-5 py-5 col-lg-6">
                 <div class="mt-2 pt-5">
                     <h1 class="text-center font-monospace NeonText">
                         Nom du produit
@@ -35,7 +35,7 @@
                         Tailles :
                     </p>
                     <p>
-                        Référence
+                        Référence :
                     </p>
                 </div>
                 <div class="  col-lg-6 m-auto">
@@ -51,7 +51,7 @@
 
                 <div class="   col-lg-12">
                     <div class="   m-auto text-center col-lg-2 mt-4">
-                        <button type="button" class="   col-lg-12 NeonText font-monospace btnacheter ">ENTRER</button>
+                        <button type="button" class=" col-lg-12 NeonText font-monospace btnacheter ">ACHETER</button>
                     </div>
                 </div>
             </div>                
@@ -63,16 +63,20 @@
 
             </div>
             <div class="col-lg-8 m-auto">
-                <h1 class="   text-center NeonText">
+                <h1 class=" font-monospace text-center NeonText">
                     Descripton :
                 </h1>
-                <p class="TextColor pt-3 m-auto col-lg-12 ">
+                <p class="TextColor font-monospace pt-3 pb-3 m-auto col-lg-12 ">
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                 </p>
             </div>
             
         </div>
     </main>
+
+    
+        <!-- footer -->
+    <?php include('../resources/views/footer.blade.php'); ?>
 
 
 </body>

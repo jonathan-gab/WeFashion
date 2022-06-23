@@ -14,15 +14,16 @@
 
 </head>
 <body>
-    {{-- navbar --}}
+
+    <!-- navbar -->
     
     <?php include('../resources/views/header.blade.php'); ?>
 
-    {{-- main --}}
+    <!-- main -->
 
-    <main class="my-5 py-5 m-auto">
+    <main class="my-5 m-auto">
 
-        <div class="text-center pb-4">
+        <div class="text-center font-monospace pb-4">
             <h1 class="TItleList pb-2">
                 Liste de produits
             </h1>
@@ -30,16 +31,15 @@
                 Résultats : 4
             </p>
         </div>
-
-
-        {{-- products cards --}}
+        
+        <!-- products cards -->
         <div class="col-lg-12 m-auto ">
             <div class="col-lg-10 m-auto row ">
                 <div class="col-lg-4">
                     <a href="{{url('/productPage.blade.php')}}">
                         <div class="profile-card-2"><img class="col-lg-12" src="../assets/img/femmes/Wxl-_19PE_juin18_3490.jpg" class="img img-responsive">
-                            <div class="profile-name">JOHN DOE</div>
-                            <div class="m-auto profile-username">@johndoesurname</div>  
+                            <div class="font-monospace profile-name">Koise</div>
+                            <div class="m-auto font-monospace profile-username">45€</div>  
                         </div>
                     </a>
                     
@@ -47,16 +47,16 @@
                 <div class="col-lg-4">
                     <a href="">
                         <div class="profile-card-2"><img class="col-lg-12" src="../assets/img/femmes/wxl-_Carpentie-011.jpg" class="img img-responsive">
-                            <div class="profile-name">JOHN DOE</div>
-                            <div class="m-auto profile-username">@johndoesurname</div>
+                            <div class="font-monospace profile-name">Kiwi</div>
+                            <div class="m-auto font-monospace profile-username">39.99€</div>
                         </div>
                     </a>
                     
                 </div>
                 <div class="col-lg-4">
                     <a href=""><div class="profile-card-2"><img class="col-lg-12" src="../assets/img/femmes/wxl-_Carpentie-011.jpg" class="img img-responsive">
-                        <div class="profile-name">JOHN DOE</div>
-                        <div class="m-auto profile-username">@johndoesurname</div>
+                        <div class="font-monospace profile-name">Cofee</div>
+                            <div class="m-auto font-monospace profile-username">65€</div>
                         </div>
                     </a>
                     
@@ -67,39 +67,11 @@
         </div>
     </main>
 
-    {{-- Footer --}}
-    <footer class=" col-lg-12 text-center">
-        <div class=" pt-5 pb-5 col-lg-8 row m-auto">
 
-            <div class=" col-lg-4  ">
-                <h1 class="pb-4 FooterTitle">Information</h1>
-                <div class=" col-lg-12  m-auto">
-                        <a class=" col-lg-9 m-auto FooterText font-monospace nav-link" href="#">Mention légales</a>
-                        <a class=" col-lg-9 m-auto FooterText font-monospace nav-link" href="#">Presse</a>
-                        <a class=" col-lg-9 m-auto FooterText font-monospace nav-link" href="#">Fabrication</a>
-                </div>
-                
-            </div>
-            <div class="pb-3 col-lg-4  ">
-                <h1 class="pb-4 FooterTitle">Information</h1>
-                <div class=" col-lg-12  m-auto">
-                        <a class=" col-lg-9 m-auto FooterText font-monospace nav-link" href="#">Contactez-nous</a>
-                        <a class=" col-lg-9 m-auto FooterText font-monospace nav-link" href="#">Livraison & Retour</a>
-                        <a class=" col-lg-9 m-auto FooterText font-monospace nav-link" href="#">Condition de vente</a>
-                </div>
-                
-            </div>
-            <div class="pb-3 col-lg-4  ">
-                <h1 class="pb-4 FooterTitle">Information</h1>
-                <div class="col-lg-12 m-auto">
-                    <div class="col-lg-4 m-auto  row">
-                        <a class="col-lg-6 FooterText font-monospace nav-link" href="#"><i class="fa-brands fa-facebook"></i></a>
-                        <a class="col-lg-6 FooterText font-monospace nav-link" href="#"><i class="fa-brands fa-instagram"></i></a>
-                    </div>
-                        
-                        <a class="col-lg-9 m-auto FooterText font-monospace nav-link" href="#">inscrivez vous à la newsletter</a>
-                </div>
-            </div>
-    </footer>
+    
+    <!-- footer -->
+    <?php include('../resources/views/footer.blade.php'); ?>
+
+   
 </body>
 </html>
