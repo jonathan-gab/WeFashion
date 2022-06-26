@@ -11,10 +11,25 @@
     border: transparent;
 }
 
+.navbar{
+    backdrop-filter: blur(15px);
+    background-color: #00000071;
+
+}
+
+.MenuBtn{
+    border: none;
+}
+
+
 /* ########## Welcome page ########### */
+
+
+
 
 .HeaderWelcome {
     position: relative;
+    background-image: url(../assets/img/Plage.jpg);
     background-color: black;
     height: 100vh;
     min-height: 25rem;
@@ -28,28 +43,13 @@
     height: auto;
   }
 
-  .HeaderWelcome>video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: 0;
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-  }
-
   .HeaderWelcome .overlay {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgb(103, 103, 103);
+    background-color: rgb(141, 141, 141);
     opacity: 0.5;
     z-index: 1;
   }

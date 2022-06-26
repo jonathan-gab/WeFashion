@@ -16,9 +16,9 @@ return new class extends Migration
         Schema::table('products',function(Blueprint $table){
 
             $table
-            ->foreignId('picture_id')->constrained()->OnDelete('cascade');
+            ->foreignId('picture_id')->nullable()->constrained()->onDelete('cascade');
             $table
-            ->foreignId('category_id')->constrained();
+            ->foreignId('category_id')->nullable()->constrained()->onDelete('set null')            ;
         });
     }
 

@@ -48,7 +48,7 @@
                 <td>Haut</td>
                 <td>45€</td>
                 <td>Soldé</td>
-                <td><a href="{{url('modificationController.blade.php')}}"><i class="fa-solid fa-2x fa-gear"></i></a></td>
+                <td><a href="{{url('edit.blade.php')}}"><i class="fa-solid fa-2x fa-gear"></i></a></td>
                 <td><a href=""><i class="fa-solid fa-2x fa-xmark"></i></a></td>
 
               </tr>

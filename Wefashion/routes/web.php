@@ -4,6 +4,8 @@ use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProductPageController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\IndexController;
 use Illuminate\Support\Facades\Auth;
 
 /*
@@ -17,14 +19,17 @@ use Illuminate\Support\Facades\Auth;
 |
 */
 
+// Route
+
 Route::get('/', function () {
     return view('welcome');
 });
 
+
 Route::get('index.blade.php', [ProductController::class, 'index'])->name('index');
 Route::get('productPage.blade.php', [ProductPageController::class, 'productPage'])->name('productPage');
-Route::get('adminAuthentication.blade.php', [Authentication::class, 'admin'])->name('admin');
-Route::get('modificationController.blade.php', [App\Http\Controllers\ModificationProductController::class, 'modificationController'])->name('modificationController');
+// Route::get('adminAuthentication.blade.php', [Authentication::class, 'admin'])->name('admin');
+Route::get('index.blade.php', [IndexController::class, 'index'])->name('index');
 
 
 
@@ -34,4 +39,6 @@ Route::get('admin',[LoginController::class, 'showLoginForm'])->name('admin');
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+Route::resource('categories', CategoryController::class);
+Route::resource('products', ProductController::class);
 

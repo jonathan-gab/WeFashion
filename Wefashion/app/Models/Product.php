@@ -25,5 +25,9 @@ class Product extends Model
     }
 
 
+    protected $fillable=['name', 'description', 'price', 'visible', 'published', 'discount', 'reference', "category_id" ];
+
 
 }
+
+

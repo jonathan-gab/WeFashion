@@ -1,5 +1,6 @@
 <!doctype html>
 
+
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 <link rel="stylesheet" href="../style/style.css">
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
@@ -29,10 +30,10 @@
                 <a class="navbar-brand font" href="{{ url('/') }}">
                    We Fashion
                 </a>
-                <a class="navbar-brand" href="{{ url('/') }}">
-                   PRODUIT
+                <a class="navbar-brand" href="{{ url('products') }}">
+                    PRODUIT
                 </a>
-                <a class="navbar-brand" href="{{ url('/') }}">
+                <a class="navbar-brand" href="{{ url('categories') }}">
                     CATEGORIES
                  </a>
                 

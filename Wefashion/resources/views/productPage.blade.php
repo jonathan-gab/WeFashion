@@ -15,7 +15,7 @@
 
     {{-- main --}}
 
-    <main>
+    <main class=" pt-5 mt-4">
         <div class="my-5 col-lg-10 row m-auto">
             <div class=" col-lg-6">
                 <img class="w-100" src="../assets/img/femmes/Wxl-_19PE_juin18_3490.jpg" alt="">

@@ -11,16 +11,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>We Fashion</title>
 </head>
-<body>
-    <header class="HeaderWelcome">
+<body class="">
+    <header class="HeaderWelcome BackgroundWelcomes">
 
     <!-- This div is  intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
     <div class="overlay"></div>
 
     <!-- The HTML5 video element that will create the background video on the header -->
-    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-    <source src="../assets/videos/Wallpaper_welcome.mp4" type="video/mp4">
-    </video>
 
     <div class="container h-100">
     <div class="col-lg-12 d-flex h-100 text-center align-items-center">

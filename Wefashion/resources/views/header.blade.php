@@ -13,19 +13,33 @@
 
     <script src="https://kit.fontawesome.com/f3742b5c87.js" crossorigin="anonymous"></script>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+
+
+    <script>
+        $(window).on("scroll", function() {
+          var scrollPos = $(window).scrollTop();
+          if (scrollPos <= 0) {
+              $('.navbar-default').addClass('top-of-page');
+          } else {
+              $('.navbar-default').removeClass('top-of-page');
+          }
+      });
+      </script>
 </head>
 
     <header class=" col-lg-12 ">
-        <nav class="navbar-default bg-dark navbar navbar-expand-lg ">
+        <nav class="navbar-default navbar fixed-top navbar-expand-lg ">
             <div class="container-fluid">
-              <a class="col-3 p-2 font-monospace col-md-3 col-md-1 Title text-sm-center col-lg-2 neontextnavbar navbar-brand" href="#">
+              <a class="col-3 p-2 font-monospace col-md-3 col-md-1 Title text-sm-center col-lg-2 neontextnavbar navbar-brand" href="/index.blade.php">
                 WE FASHION
               </a>
               <div class="col-6 col-md-6">
 
               </div>
               <div class="">
-                <a class="col-3 col-md-3 col-md-11 col-lg-11 m-auto text-white navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="col-3 MenuBtn col-md-3 col-md-11 col-lg-11 m-auto text-white navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <i class="NeonText fa-solid fa-bars"></i>
                 </a>
               </div>
