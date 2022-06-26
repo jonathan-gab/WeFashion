@@ -40,8 +40,13 @@ class Product extends Model
     public static function getCategory($id)
     {
         $products = Product::where('category_id',$id)->get();
-   
-        
+        return $products;
+    }
+
+    
+    public static function getDiscount()
+    {
+        $products = Product::where('discount', 'En solde')->get();
         return $products;
     }
 

@@ -39,5 +39,16 @@ class ProductsController extends Controller
         ]);
     }
 
+    public function getDiscountProduct()
+    {
+        $products = Product::getDiscount();
+        return view(
+            'client.discount', 
+            [
+                'products' => $products
+            ]
+        );
+    }
+
 
 }
