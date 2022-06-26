@@ -8,12 +8,21 @@ use Illuminate\Database\Eloquent\Model;
 class Category extends Model
 {
     use HasFactory;
-
+    protected $fillable=['name'];
     public function product()
     {
         return $this->hasMany(Product::class);
     }
 
-    protected $fillable=['name'];
+    public static function getAll()
+    {
+        $categories = Category::all();
+        return $categories;
+    }
+    public static function getById(int $id)
+    {
+        $category = Category::find($id);
+        return $category;
+    }
 
 }

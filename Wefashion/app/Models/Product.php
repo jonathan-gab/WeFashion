@@ -9,8 +9,10 @@ class Product extends Model
 {
 
     use HasFactory;
+    protected $fillable=['name', 'description', 'price', 'visible', 'published', 'discount', 'reference', "category_id" ];
 
-    public function categories()
+
+    public function category()
 	{
 		return $this->belongsTo(Category::class);
 	}
@@ -24,8 +26,16 @@ class Product extends Model
         return $this->belongsToMany(Size::class);
     }
 
+    public static function getAll(){
+        $products = Product::all();
+        return $products;
+    }
 
-    protected $fillable=['name', 'description', 'price', 'visible', 'published', 'discount', 'reference', "category_id" ];
+    public static function getProduct(int $id){
+        $product = Product::find($id);
+
+        return $product;
+    }
 
 
 }

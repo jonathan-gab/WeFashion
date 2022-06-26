@@ -16,9 +16,7 @@ return new class extends Migration
         Schema::table('products',function(Blueprint $table){
 
             $table
-            ->foreignId('picture_id')->nullable()->constrained()->onDelete('cascade');
-            $table
-            ->foreignId('category_id')->nullable()->constrained()->onDelete('set null')            ;
+            ->foreignId('category_id')->nullable()->constrained();
         });
     }
 
@@ -30,9 +28,7 @@ return new class extends Migration
     public function down()
     {
         Schema::table('products', function (Blueprint $table) {
-            $table->dropForeign(['picture_id']);
             $table->dropForeign(['category_id']);
-            $table->dropColumn('picture_id');
             $table->dropColumn('category_id');
         });
     }
