@@ -28,6 +28,7 @@
       });
       </script>
 </head>
+<!--Navbar commune à toutes les pages-->
 
     <header class=" col-lg-12 ">
         <nav class="navbar-default navbar fixed-top navbar-expand-lg ">

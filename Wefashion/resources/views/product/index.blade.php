@@ -19,24 +19,22 @@
 
     <header>
         @extends('layouts.app')
-
     </header>
 
 
-    <main class="col-lg-6 m-auto mt-5 pt-5">
+  <!--Tableau montrant les informations les plus importantes des produits-->
 
-      <h1 class="text-center font-monospace">PRODUCT</h1>
+    <main class="col-lg-6 m-auto mt-5 pt-5">
+      <h1 class="text-center font-monospace NeonText">PRODUITS</h1>
         <div class="row m-auto col-lg-11">
             <div class="col-lg-10">
-
             </div>
             <div class="col-lg-2 m-auto text-center">
-                <a href='products/create' type="button" class="br btn btn-primary">
+                <a href='products/create' type="button" class="btn btn-primary">
                   Nouveau
                 </a>
             </div>
         </div>
-       
 
         <table class="table">
             <thead>
@@ -47,11 +45,12 @@
                 <th scope="col">Etat</th>
                 <th scope="col">Modifier</th>
                 <th scope="col">Supprimer</th>
-                
               </tr>
             </thead>
 
             <tbody>
+
+  <!-- Affichage des informations Nom, Catégorie, Prix et Etat-->
 
               @foreach ($products as $product)
               <tr>
@@ -63,8 +62,6 @@
                 @endforeach
                 <td>{{$product->price}}</td>
                 <td>{{$product->discount}}</td>
-
-
 
                 <td>
                   <a href="{{url('products/'.$product->id.'/edit')}}">
@@ -83,8 +80,6 @@
                         <i class="fa-solid fa-2x fa-xmark"></i>                    
                     </button>
                   </form>
-
-
                 </td>
               </tr>
               @endforeach

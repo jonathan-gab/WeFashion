@@ -5,13 +5,11 @@
             @foreach ($products as $product)
             <div class="col-lg-4">
                         <a href="{{url('produit', $product->id)}}">
-                            
                             <div class="profile-card-2"><img class="col-lg-12" src={{asset($product->picture->path)}} class="img img-responsive">
                                 <div class="font-monospace profile-name">{{$product->name}}</div>
                                 <div class="m-auto font-monospace profile-username">{{$product->price}}€</div>  
                             </div>
-                        </a>
-                        
+                        </a> 
                     </div>
             @endforeach
             

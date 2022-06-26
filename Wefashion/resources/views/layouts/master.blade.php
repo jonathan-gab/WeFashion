@@ -20,17 +20,14 @@
                     <h1 class="TItleList pb-2">
                         Liste de produits
                     </h1>
-                    <p class="NeonText">
-                        Résultats : 4
-                    </p>
                 </div>
                     @yield('content')
                 </div>
             </div>
         </main>
-        <div class="col pb-3">
+        <footer class=" col-lg-12 text-center">
             @include('partials.footer')
-        </div>
+        </footer>
     </div>
     <script src="https://kit.fontawesome.com/d09560a292.js" crossorigin="anonymous"></script>
 </body>

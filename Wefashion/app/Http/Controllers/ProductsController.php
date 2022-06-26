@@ -8,13 +8,22 @@ use Illuminate\Http\Request;
 
 class ProductsController extends Controller
 {
-    
+    public function __construct()
+    {
+        view()->composer('partials.clientNavbar', function($view){
+            $categories = Category::getAll();
+            $view->with('categories', $categories);
+        });
+    }
     public function index()
     {
         
-        $products = Product::getAll();
+        $products = Product::getPublished();
+        $productsPaginate = $products->paginate(6);
+        $count = $productsPaginate->total();
         return view('client.products', [
-            'products' => $products,
+            'products' => $productsPaginate,
+            'count' => $count
         ]);
     }
 
@@ -30,22 +39,28 @@ class ProductsController extends Controller
     public function getCategoryProduct(int $id)
     {   
         $products = Product::getCategory($id);
+        $productsPagination = $products->paginate(6);
         $category = Category::getById($id);
+        $count = $productsPagination->total();
        
 
         return view('client.category', [
-            'products' => $products,
+            'products' => $productsPagination,
             'category' => $category,
+            'count'=> $count
         ]);
     }
 
     public function getDiscountProduct()
     {
         $products = Product::getDiscount();
+        $productsPagination = $products->paginate(6);
+        $count = $productsPagination->total();
         return view(
             'client.discount', 
             [
-                'products' => $products
+                'products' => $productsPagination,
+                'count'=> $count
             ]
         );
     }

@@ -33,9 +33,7 @@
                         @empty
                         <p>Aucune taille</p>
                         @endforelse
-
-
-                        </select>
+                    </select>
                 </div>
 
                 <div class="   col-lg-12">
@@ -49,7 +47,6 @@
         <div class="col-lg-12 pb-4">
             <div class="col-lg-11 m-auto">
                 <hr class="col-lg-12 text-center">
-
             </div>
             <div class="col-lg-8 m-auto">
                 <h1 class=" font-monospace text-center NeonText">
@@ -59,6 +56,5 @@
                     {{$product->description}}                
                 </p>
             </div>
-            
         </div>
     </main>

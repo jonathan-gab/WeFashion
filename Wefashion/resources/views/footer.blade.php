@@ -19,17 +19,17 @@
             <div class=" col-lg-4  ">
                 <h1 class="pb-4 font-monospace FooterTitle">Information</h1>
                 <div class=" col-lg-12  m-auto">
-                        <a class=" col-lg-9 m-auto FooterText font-monospace nav-link" href="#">Mention légales</a>
-                        <a class=" col-lg-9 m-auto FooterText font-monospace nav-link" href="#">Presse</a>
-                        <a class=" col-lg-9 m-auto FooterText font-monospace nav-link" href="#">Fabrication</a>
+                    <a class=" col-lg-9 m-auto FooterText font-monospace nav-link" href="#">Mention légales</a>
+                    <a class=" col-lg-9 m-auto FooterText font-monospace nav-link" href="#">Presse</a>
+                    <a class=" col-lg-9 m-auto FooterText font-monospace nav-link" href="#">Fabrication</a>
                 </div>
             </div>
             <div class="pb-3 col-lg-4  ">
                 <h1 class="pb-4 font-monospace FooterTitle">Service client</h1>
                 <div class=" col-lg-12  m-auto">
-                        <a class=" col-lg-9 m-auto FooterText font-monospace nav-link" href="#">Contactez-nous</a>
-                        <a class=" col-lg-9 m-auto FooterText font-monospace nav-link" href="#">Livraison & Retour</a>
-                        <a class=" col-lg-9 m-auto FooterText font-monospace nav-link" href="#">Condition de vente</a>
+                    <a class=" col-lg-9 m-auto FooterText font-monospace nav-link" href="#">Contactez-nous</a>
+                    <a class=" col-lg-9 m-auto FooterText font-monospace nav-link" href="#">Livraison & Retour</a>
+                    <a class=" col-lg-9 m-auto FooterText font-monospace nav-link" href="#">Condition de vente</a>
                 </div>
             </div>
             <div class="pb-3 col-lg-4  ">

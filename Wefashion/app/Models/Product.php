@@ -27,7 +27,8 @@ class Product extends Model
     }
 
     public static function getAll(){
-        $products = Product::all();
+        $productsPublished = Product::getPublished();
+        $products = $productsPublished->all();
         return $products;
     }
 
@@ -39,14 +40,23 @@ class Product extends Model
 
     public static function getCategory($id)
     {
-        $products = Product::where('category_id',$id)->get();
+        $productsDiscount = Product::getPublished();
+        $products = $productsDiscount->where('category_id',$id);
         return $products;
     }
 
     
     public static function getDiscount()
     {
-        $products = Product::where('discount', 'En solde')->get();
+        $productsDiscount = Product::getPublished();
+
+        $products =$productsDiscount->where('discount', 'En solde');
+        return $products;
+    }
+
+    public static function getPublished()
+    {
+        $products = Product::orderBy('created_at', 'desc')->where('published', 'Publié');
         return $products;
     }
 

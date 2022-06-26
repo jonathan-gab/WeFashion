@@ -17,13 +17,15 @@
     </header>
 
     <main>
-        
+
+      <!--Permet de modifier un produit déjà existant-->
         <div class="col-lg-6 pt-5 mt-5 m-auto">
               <div class="  mb-3">
                 <form action="{{ route('products.update', $product) }}" method='POST'>
                   @csrf
                   @method('PUT')
 
+                  <!-- Récupération des différentes informations modifié du produit-->
                   <label for="exampleFormControlInput1" class="form-label">Nom</label>
                   <textarea class="form-control" name="name">{{ old('name', $product->name) }}</textarea>
                   
@@ -36,22 +38,26 @@
                         </option>
                       @endforeach
                   
-                  <label for="exampleFormControlInput1" class="form-label">Nom</label>
-                  <textarea class="form-control" name="name">{{ old('name', $product->name) }}</textarea>
+                  <label for="exampleFormControlInput1" class="form-label">Prix</label>
+                  <textarea class="form-control" name="name">{{ old('name', $product->price) }}</textarea>
                  
-                  <label for="exampleFormControlInput1" class="form-label">Nom</label>
-                  <textarea class="form-control" name="name">{{ old('name', $product->name) }}</textarea>
+                  <label for="exampleFormControlInput1" class="form-label">Description</label>
+                  <textarea class="form-control" name="name">{{ old('name', $product->description) }}</textarea>
                  
-                  <label for="exampleFormControlInput1" class="form-label">Nom</label>
+                  <label for="exampleFormControlInput1" class="form-label">Taille</label>
                   <textarea class="form-control" name="name">{{ old('name', $product->name) }}</textarea>
 
-                  <label for="exampleFormControlInput1" class="form-label">Nom</label>
+                  <label for="exampleFormControlInput1" class="form-label">Référence</label>
                   <textarea class="form-control" name="name">{{ old('name', $product->name) }}</textarea>
                   
-                  <label for="exampleFormControlInput1" class="form-label">Nom</label>
+                  <label for="exampleFormControlInput1" class="form-label">Image</label>
                   <textarea class="form-control" name="name">{{ old('name', $product->name) }}</textarea>
 
+                  <label for="exampleFormControlInput1" class="form-label">Etat</label>
+                  <textarea class="form-control" name="name">{{ old('name', $product->name) }}</textarea>
 
+                  <label for="exampleFormControlInput1" class="form-label">Visibilité</label>
+                  <textarea class="form-control" name="name">{{ old('name', $product->name) }}</textarea>
 
                   <button type="submit" class="btn btn-primary">Primary</button>
                 </form>

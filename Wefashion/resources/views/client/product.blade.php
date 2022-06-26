@@ -1,5 +1,7 @@
 @extends('layouts.master')
 
 @section('content')
-   @include('components.product', ['product'=>$product]) 
+
+
+@include('components.product', ['product' => $product])
 @endsection

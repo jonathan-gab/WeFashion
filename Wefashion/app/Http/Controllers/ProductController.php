@@ -15,7 +15,7 @@ class ProductController extends Controller
      */
     public function index()
     {
-        $products = Product::paginate(5);
+        $products = Product::paginate(15);
 
         $categories = Category::all();
         
@@ -54,7 +54,7 @@ class ProductController extends Controller
         Product::create($request->all());
 
         return redirect()->route('products.index')
-        ->with('succes','Product created succesfully');
+        ->with('success','Product created succesfully');
 
     }
 
@@ -103,7 +103,7 @@ class ProductController extends Controller
         $product->update($request->all());
 
         return redirect()->route('products.index')
-        ->with('succes','Product created succesfully');
+        ->with('success','Product created succesfully');
     }
 
     /**
