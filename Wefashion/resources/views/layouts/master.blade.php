@@ -16,18 +16,18 @@
             @include('partials.clientNavbar')
         </header>
         <main class="my-5 pt-5 m-auto">
-        <div class="text-center font-monospace pb-4">
-                <h1 class="TItleList pb-2">
-                    Liste de produits
-                </h1>
-                <p class="NeonText">
-                    Résultats : 4
-                </p>
+            <div class="text-center font-monospace pb-4">
+                    <h1 class="TItleList pb-2">
+                        Liste de produits
+                    </h1>
+                    <p class="NeonText">
+                        Résultats : 4
+                    </p>
+                </div>
+                    @yield('content')
+                </div>
             </div>
-                @yield('content')
-            </div>
-        </div>
-    </main>
+        </main>
         <div class="col pb-3">
             @include('partials.footer')
         </div>

@@ -37,6 +37,13 @@ class Product extends Model
         return $product;
     }
 
+    public static function getCategory($id)
+    {
+        $products = Product::where('category_id',$id)->get();
+   
+        
+        return $products;
+    }
 
 }
 

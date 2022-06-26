@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 
 class ProductsController extends Controller
 {
+    
     public function index()
     {
         
@@ -25,4 +26,18 @@ class ProductsController extends Controller
             'product' => $product,
         ]);
     }
+
+    public function getCategoryProduct(int $id)
+    {   
+        $products = Product::getCategory($id);
+        $category = Category::getById($id);
+       
+
+        return view('client.category', [
+            'products' => $products,
+            'category' => $category,
+        ]);
+    }
+
+
 }
